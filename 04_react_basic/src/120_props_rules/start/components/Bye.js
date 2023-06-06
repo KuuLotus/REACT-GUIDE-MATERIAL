@@ -1,7 +1,8 @@
-const Bye = (props) => {
+const Bye = ({name}) => {
+  // console.log(props);
   return (
     <div>
-      <h3>Bye {props.name}</h3>
+      <h3>Bye {name}</h3>
     </div>
   );
 };
