@@ -1,4 +1,3 @@
-
 const animals = ["Dog", "Cat", "Rat"];
 
 const Example = () => {
@@ -23,7 +22,9 @@ const Example = () => {
         {/* {animalList}
         {helloAnimals} */}
         {/* POINT map関数はJSX内に記述可能 */}
-        {animals.map((animal) => <li>Hello, {animal}</li>)}
+        {animals.map((animal) => (
+          <li key={animal}>Hello, {animal}</li>
+        ))}
       </ul>
     </>
   );
