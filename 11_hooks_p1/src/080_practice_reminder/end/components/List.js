@@ -6,7 +6,7 @@ const List = () => {
   return (
     <div>
       {todos.map((todo) => (
-        <Item todo={todo} key={todo.id} />
+        <Item todo={todo} key={todo} />
       ))}
     </div>
   );
