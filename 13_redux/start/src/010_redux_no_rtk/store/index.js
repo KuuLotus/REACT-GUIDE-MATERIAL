@@ -1,4 +1,4 @@
-import { createStore, combineReducers } from "redux";
+import { createStore } from "redux";
 
 const initialState = 0;
 const reducer = (state = initialState, { type, step }) => {
@@ -12,8 +12,4 @@ const reducer = (state = initialState, { type, step }) => {
   }
 };
 
-const reducers = combineReducers({
-  counter: reducer,
-});
-
-export default createStore(reducers);
+export default createStore(reducer);
